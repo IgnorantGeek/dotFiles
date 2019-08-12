@@ -5,9 +5,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'morhetz/gruvbox'
 Plug 'cocopon/iceberg.vim'
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
-:colorscheme iceberg
+:colorscheme nord
 map <C-n> :NERDTreeToggle<CR>
 set number
 
