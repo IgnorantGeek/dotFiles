@@ -8,8 +8,10 @@ case $- in
       *) return;;
 esac
 
+alias "plex"="ping 192.168.0.2"
 alias ..="cd ../"
 alias ...="cd ../../"
+alias "pushgh"="git push github master"
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -119,3 +121,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+if [ $TILIX_ID ] || [ $VTE_VERSION ] ; then source /etc/profile.d/vte.sh; fi # Ubuntu Budgie END
+
