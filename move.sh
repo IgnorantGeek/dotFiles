@@ -1,10 +1,14 @@
 #!/bin/bash
 
 if [ "$1" = "Movies" ] || [ "$1" = "TVshows" ]; then
-  echo "Transfering $2 to plex server..."
-  scp -r "$2" Plex:/media/storageHDD/plexmedia/$1
-  echo "Finished."
+  for var in "$@"
+    do
+      if [ "$var" != "$1" ]; then
+        echo "Transfering $var to Airforce1..."
+        scp -r "$var" Plex:/media/storageHDD/plexmedia/$1
+        echo "Finished."
+      fi
+    done
 else
-  echo "Incorrect sub directory name"
+  echo "Incorrect destination name."
 fi
-
