@@ -8,10 +8,12 @@ case $- in
       *) return;;
 esac
 
-alias "plex"="ping 192.168.0.2"
+alias "af1"="ping 192.168.0.17"
 alias ..="cd ../"
 alias ...="cd ../../"
 alias "pushgh"="git push github master"
+alias "comj"="javac *.java"
+alias "clrj"="rm *.class"
 
 
 if [ -f ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ]; then
