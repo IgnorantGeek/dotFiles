@@ -5,16 +5,16 @@ for var in "$@"
   do
     if [ "$var" != "$1" ]; then
       echo "Transfering $var to Airforce1..."
-      scp -r "$var" Plex:/media/storageHDD/plexmedia/Movies/
+      scp -r "$var" Airforce1:/media/plexmedia/Movies
       echo "Finished."
     fi
   done
-elif [ "$1" = "-t"] || [ "$1" = "-T" ]; then
+elif [ "$1" = "-t" ] || [ "$1" = "-T" ]; then
 for var in "$@"
   do
     if [ "$var" != "$1" ]; then
       echo "Transfering $var to Airforce1..."
-      scp -r "$var" Plex:/media/storageHDD/plexmedia/TVshows/
+      scp -r "$var" Airforce1:/media/plexmedia/TVshows
       echo "Finished."
     fi
   done
