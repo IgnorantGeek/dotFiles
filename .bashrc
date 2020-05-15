@@ -12,6 +12,7 @@ alias "af1"="ping 192.168.0.17"
 alias ..="cd ../"
 alias ...="cd ../../"
 alias "pushgh"="git push github master"
+alias "pullgh"="git pull github master"
 alias "comj"="javac *.java"
 alias "clrj"="rm *.class"
 
