@@ -19,6 +19,7 @@ alias "pushgh"="git push github master"
 alias "pullgh"="git pull github master"
 alias "comj"="javac *.java"
 alias "clrj"="rm *.class"
+alias "neo"="neofetch"
 
 source /etc/profile.d/vte.sh
 
