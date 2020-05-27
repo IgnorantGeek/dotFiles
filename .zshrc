@@ -10,6 +10,16 @@ export ZSH="/home/nick/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
+
+# custom aliases
+alias "af1"="ping 192.168.0.17"
+alias ..="cd ../"
+alias ...="cd ../../"
+alias "pushgh"="git push github master"
+alias "pullgh"="git pull github master"
+alias "comj"="javac *.java"
+alias "clrj"="rm *.class"
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
