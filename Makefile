@@ -1,19 +1,19 @@
-CXX      := -g++
+CXX      := -gcc
 CXXFLAGS := -pedantic-errors -Wall -Wextra
 LDFLAGS  := -L/usr/lib -lstdc++ -lm
-BUILD    := ./bin
-OBJ_DIR  := $(BUILD)/objects
-APP_DIR  := $(BUILD)/apps
-TARGET   := rbtree
+BUILD    := ./
+OBJ_DIR  := $(BUILD)objects
+APP_DIR  := $(BUILD)
+TARGET   := agent
 INCLUDE  := -Iinclude/
 SRC      :=                      \
-   $(wildcard src/*.cpp)         \
+   $(wildcard *.c)         \
 
-OBJECTS := $(SRC:%.cpp=$(OBJ_DIR)/%.o)
+OBJECTS := $(SRC:%.c=$(OBJ_DIR)/%.o)
 
 all: build $(APP_DIR)/$(TARGET)
 
-$(OBJ_DIR)/%.o: %.cpp
+$(OBJ_DIR)/%.o: %.c
 	@mkdir -p $(@D)
 	$(CXX) $(CXXFLAGS) $(INCLUDE) -o $@ -c $<
 
@@ -27,12 +27,12 @@ build:
 	@mkdir -p $(APP_DIR)
 	@mkdir -p $(OBJ_DIR)
 
-debug: CXXFLAGS += -DDEBUG -g
+debug: CXXFLAGS += -DEBUG -g
 debug: all
 
 release: CXXFLAGS += -O2
 release: all
 
 clean:
-	-@rm -rvf $(OBJ_DIR)/*
-	-@rm -rvf $(APP_DIR)/*
+	-@rm -rvf $(OBJ_DIR)
+	-@rm ./$(TARGET)
