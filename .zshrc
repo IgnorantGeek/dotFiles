@@ -20,6 +20,8 @@ alias "pullgh"="git pull github master"
 alias "comj"="javac *.java"
 alias "clrj"="rm *.class"
 
+source /etc/profile.d/vte.sh
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -78,7 +80,7 @@ alias "clrj"="rm *.class"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
