@@ -5,6 +5,7 @@ sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # need to say yes to changing default shell to zsh
+# then close the shell. We can probably automate this, need to wait long enough tho...
 
 # install powerlevel9k
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
@@ -17,8 +18,9 @@ sudo apt install fonts-powerline
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # install fonts
-mkdir ~/Documents/fonts-temp
-cd ~/Documents/fonts-temp/
 git clone https://github.com/powerline/fonts.git
 cd fonts/
 ./install.sh
+
+cd ..
+rm -rf fonts/
