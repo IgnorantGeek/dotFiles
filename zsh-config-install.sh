@@ -5,7 +5,7 @@ sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # need to say yes to changing default shell to zsh
-# then close the shell. We can probably automate this, need to wait long enough tho...
+# then close the new shell that opens (type y, wait. exit)
 
 # install powerlevel9k
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
