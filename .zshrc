@@ -21,6 +21,9 @@ alias "comj"="javac *.java"
 alias "clrj"="rm *.class"
 alias "neo"="neofetch"
 alias "vsc"="code ."
+alias "cls"="clear"
+alias "test"="ping 8.8.8.8"
+alias "work"="cd ~/Documents/Workspace"
 
 
 source /etc/profile.d/vte.sh
