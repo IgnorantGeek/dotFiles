@@ -24,6 +24,7 @@ alias "vsc"="code ."
 alias "cls"="clear"
 alias "test"="ping 8.8.8.8"
 alias "work"="cd ~/Documents/Workspace"
+alias "idea"="/snap/intellij-idea-community/current/bin/idea.sh ./ </dev/null &>/dev/null & disown"
 
 
 source /etc/profile.d/vte.sh
