@@ -1,0 +1,39 @@
+Host Airforce1
+	Hostname 192.168.0.17
+	User nick
+	Port 22
+	IdentityFile ~/.ssh/id_rsa
+
+Host bb8
+	Hostname 192.168.0.172
+	User nick
+	Port 22
+	IdentityFile ~/.ssh/id_rsa
+
+Host Prime
+	Hostname 192.168.0.116
+	User nick
+	Port 22
+	IdentityFile ~/.ssh/id_rsa
+
+Host 410_server
+	Hostname coms-510-02.cs.iastate.edu
+	User nheisler
+	Port 22
+
+Host pyrite
+	Hostname pyrite.cs.iastate.edu
+	User nheisler
+	Port 22
+
+Host test_server
+	Hostname 192.168.56.102
+	User company2
+	Port 22
+	IdentityFile ~/.ssh/id_rsa
+
+Host pi
+	Hostname 192.168.0.22
+	User nick
+	Port 22
+	IdentityFile ~/.ssh/id_rsa
