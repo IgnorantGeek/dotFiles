@@ -12,7 +12,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 
 
 # custom aliases
-alias "af1"="ping 192.168.0.17"
+alias "af1"="ping 192.168.1.7"
 alias ..="cd ../"
 alias ...="cd ../../"
 alias "pushgh"="git push github master"
@@ -25,9 +25,7 @@ alias "cls"="clear"
 alias "test"="ping 8.8.8.8"
 alias "work"="cd ~/Documents/Workspace"
 alias "idea"="/snap/intellij-idea-community/current/bin/idea.sh ./ </dev/null &>/dev/null & disown"
-
-
-source /etc/profile.d/vte.sh
+alias "python"="python3"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load

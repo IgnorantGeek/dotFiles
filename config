@@ -1,5 +1,5 @@
 Host Airforce1
-	Hostname 192.168.0.17
+	Hostname 192.168.1.21
 	User nick
 	Port 22
 	IdentityFile ~/.ssh/id_rsa
@@ -33,7 +33,7 @@ Host test_server
 	IdentityFile ~/.ssh/id_rsa
 
 Host pi
-	Hostname 192.168.0.22
+	Hostname 192.168.1.19
 	User nick
 	Port 22
 	IdentityFile ~/.ssh/id_rsa
