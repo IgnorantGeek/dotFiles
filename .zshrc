@@ -8,7 +8,7 @@ export ZSH="/home/nick/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 
 # custom aliases
@@ -88,7 +88,7 @@ alias "python"="python3"
 plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL10K_PROMPT_ON_NEWLINE=true
 
 # User configuration
 
